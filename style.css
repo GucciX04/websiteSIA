@@ -6,9 +6,9 @@ body {
   }
   
   header {
-    background-color: #215488;
+    background: linear-gradient(to bottom right, #4a00e0, #8e2de2);
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     display: flex; 
     align-items: center;
     justify-content: space-between; 
@@ -17,26 +17,71 @@ body {
   }
   
   .header-buttons {
-    margin-left: auto;
+    display: flex; 
+    gap: 10px; 
   }
   
   .header-buttons button {
     background-color: #ffffff;
     color: #215488;
-    border: none;
-    padding: 5px 10px;
-    margin-left: 10px; 
-    border-radius: 5px;
+    border: 2px solid #215488; 
+    padding: 8px 15px; 
+    border-radius: 25px; 
     cursor: pointer;
     font-size: 1rem;
+    font-weight: bold;
+    display: flex; 
+    align-items: center;
+    gap: 8px; 
+    transition: all 0.3s ease; 
+  }
+  
+  .header-buttons button i {
+    font-size: 1.2rem; 
   }
   
   .header-buttons button:hover {
-    background-color: #e0e0e0; 
+    background-color: #215488; 
+    color: #ffffff; 
+    border-color: #ffffff; 
   }
+
+  #intro-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #4a00e0, #8e2de2);
+  z-index: 9999; /* ensures it's on top */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+#intro-screen h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#start-btn {
+  background-color: #ffffff;
+  color: #4a00e0;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#start-btn:hover {
+  background-color: #ddd;
+}
+
   
-  h1 {
-    margin: 0;
-    font-size: 2rem;
-  }
   
