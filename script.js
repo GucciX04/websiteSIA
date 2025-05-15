@@ -29,3 +29,16 @@ startBtn.addEventListener('click', () => {
   introScreen.style.display = 'none';
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const playBtn = document.getElementById("start-btn");
+    const introScreen = document.getElementById("intro-screen");
+    const cardSelection = document.getElementById("card-selection");
+  
+    if (playBtn) {
+      playBtn.addEventListener("click", () => {
+        introScreen.classList.add("hidden");
+        cardSelection.classList.remove("hidden");
+      });
+    }
+  });
+  
